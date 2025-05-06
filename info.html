@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="light-mode">
+      
+<div class="tab-container">
+    <div class="tab-buttons">
+      <button class="tab-link active" onclick="openTab(event, 'overview')">Booking Overview</button>
+      <button class="tab-link" onclick="openTab(event, 'host')">Host Details</button>
+      <button class="tab-link" onclick="openTab(event, 'policies')">Policies</button>
+      <button class="help-tab" onclick="toggleHelp()">Help</button>
+    </div>
+    <div id="userWelcome"></div>
+  
+    <div id="overview" class="tab-content active">
+      <h3>🏡 Cozy 2BR Apartment in Downtown</h3>
+      <p><strong>Dates:</strong> May 10 – May 15</p>
+      <p><strong>Guests:</strong> 2 Adults</p>
+      <p><strong>Total Cost:</strong> $550 (includes cleaning and service fees)</p>
+      <p><strong>Amenities:</strong> WiFi, Kitchen, Air Conditioning, Balcony with city view</p>
+    </div>
+  
+    <div id="host" class="tab-content">
+      <h3>👩‍💼 Host: Sarah M.</h3>
+      <p>Superhost with 4.9★ rating (120+ reviews)</p>
+      <p>Responds within 1 hour</p>
+      <p><strong>Languages:</strong> English, Spanish</p>
+      <p>“Excited to host you! Let me know if you have any questions before arrival.”</p>
+    </div>
+  
+    <div id="policies" class="tab-content">
+      <h3>📜 Booking Policies</h3>
+      <ul style="text-align: left;">
+        <li>Free cancellation within 48 hours of booking</li>
+        <li>Check-in: 3:00 PM | Check-out: 11:00 AM</li>
+        <li>No pets allowed</li>
+        <li>Quiet hours: 10:00 PM – 8:00 AM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="accordion-container" id="helpAccordion">
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)"><h3>How do I book a stay on Airbnb?</h3></div>
+      <div class="accordion-body">
+        To book, simply search for your destination, choose your preferred listing, select your dates, and click "Reserve." Some listings offer instant booking, while others may require host approval.
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">What is the cancellation policy?</div>
+      <div class="accordion-body">
+        Airbnb offers multiple cancellation policies, such as Flexible, Moderate, and Strict. Each host chooses their policy, so make sure to review it before booking. You can find it under the listing details.
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">Is there a service fee?</div>
+      <div class="accordion-body">
+        Yes, Airbnb charges a service fee for bookings, which helps cover customer support and other services. It’s usually a percentage of the total booking cost and is displayed during checkout.
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">What if the host cancels my booking?</div>
+      <div class="accordion-body">
+        If your host cancels, Airbnb will help you find a similar place or issue a full refund. You’ll be notified immediately and given options through the resolution center.
+      </div>
+    </div>
+  </div>
+  
+  <section id="gallery">
+    <div class="slide" ><img src="https://images.pexels.com/photos/2816323/pexels-photo-2816323.jpeg" alt="Pexels Image" id="extimage"></div>
+    <div class="slide" ><img src="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg" alt="Pexels Image" id="extimage"></div>
+ </section>
+ 
+
+  <script src="script.js"></script>
+  </body>
+  </html>

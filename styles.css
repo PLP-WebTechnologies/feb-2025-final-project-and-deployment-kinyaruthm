@@ -1,0 +1,177 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #e61e4d;
+}
+
+button {
+  padding: 0.7rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#message {
+  margin-top: 1rem;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.light-mode {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.button-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.menu{
+  position:fixed;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  text-align: center;
+}
+
+#extimage{
+  border-radius:  25%;
+  position: relative;
+  align-items: center;
+  width: 350px;
+  margin-left: auto;
+}
+
+.help-tab {
+  background-color:  #4CAF50;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.accordion-container {
+  display: none;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  background-color:  #4CAF50;
+  color: white;
+  padding: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.accordion-body {
+  display: none;
+  padding: 14px;
+  background-color: white;
+}
+
+.slide img {
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+
+}
+
+.box.animate {
+  opacity: 1; 
+  animation: moveRight 2s ease-in-out forwards;
+}
+
+@keyframes moveRight {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(200px); }
+}
+
+
+
+
