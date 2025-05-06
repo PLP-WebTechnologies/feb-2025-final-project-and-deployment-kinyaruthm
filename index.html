@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="light-mode">
+       
+        <section id="gallery">
+           <div class="slide" ><img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg" alt="Pexels Image" id="extimage" ></div>
+           <div class="slide" ><img src="https://demo-source.imgix.net/house.jpg" alt="Pexels Image" id="extimage" ></div>
+           <div class="slide" ><img src="https://images.pexels.com/photos/2816323/pexels-photo-2816323.jpeg" alt="Pexels Image" id="extimage"></div>
+           <div class="slide" ><img src="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg" alt="Pexels Image" id="extimage"></div>
+         
+<!--            
+           <button class="nav-btn" onclick="changeSlide(-1)">Previous</button>
+           <button class="nav-btn" onclick="changeSlide(1)">Next</button> -->
+        </section>
+        
+
+        <div class="button-container">
+            <button id="colorButton">Change BG Color</button>
+            <button id="themeIcon" title="Toggle Theme">🌙</button>
+        
+          </div>
+
+ 
+        <div class="login-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required />
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email" required />
+              <label for="password">Password:</label>
+              <div class="password-wrapper">
+                <input type="password" id="password" name="password" required />
+                <span id="togglePassword"></span>
+              </div>
+        
+              <button type="submit">Login</button>
+            </form>
+            
+    <button type="button" onclick="toggleHint()">Forgot Password?</button>
+
+    <div id="hintBox" style="display: none; margin-top: 1rem;">
+    <p style="color: #555;">Hint: Your username is your pet name. Contact support if you forgot your password.</p>
+</div>
+
+            <p id="message"></p>
+          </div>
+
+<script src="script.js"></script>
+    </body>
+</html>
